@@ -4,12 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Q1Loader
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }
+namespace Q1Loader.DB {
+   class TickersSrv : Data {
+   }
 }
