@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="RibbonLoaded">
+
+  <!-- add to, don't replace, the whole ribbon -->
+  <ribbon startFromScratch="false">
+    <tabs>
+
+      <tab idMso="TabAddIns">
+        <group id="g1" label="Basic Excel R Toolkit">
+          <button id="b1" label="BERT Console" size="large" onAction="ShowConsole" imageMso="CreateStoredProcedure" supertip="Open the BERT console"/>
+          <separator id="separator1" />
+          <button id="b2" label="BERT Home" onAction="HomeDirectory" imageMso="FileOpen" supertip="Open the BERT home directory"/>
+          <button id="b7" label="Startup Folder" onAction="StartupFolder" imageMso="FileOpen" supertip="Open the startup folder"/>
+          <button id="b5" label="Configure" onAction="Configuration" imageMso="ComAddInsDialog" supertip="Change configuration settings"/>
+          <separator id="separator2" />
+          <button id="b6" label="About" onAction="AboutBERT" imageMso="Info" supertip="About BERT and credits"/>
+        </group>
+        <group id="g2" label="BERT User Functions" getVisible="getUserButtonsVisible">
+          <button id="user1" getImage="getUserButtonImage" getLabel="getUserButtonLabel" getVisible="getUserButtonVisible" onAction="userButtonAction" tag="1"/>
+          <button id="user2" getImage="getUserButtonImage" getLabel="getUserButtonLabel" getVisible="getUserButtonVisible" onAction="userButtonAction" tag="2"/>
+          <button id="user3" getImage="getUserButtonImage" getLabel="getUserButtonLabel" getVisible="getUserButtonVisible" onAction="userButtonAction" tag="3"/>
+          <button id="user4" getImage="getUserButtonImage" getLabel="getUserButtonLabel" getVisible="getUserButtonVisible" onAction="userButtonAction" tag="4"/>
+          <button id="user5" getImage="getUserButtonImage" getLabel="getUserButtonLabel" getVisible="getUserButtonVisible" onAction="userButtonAction" tag="5"/>
+          <button id="user6" getImage="getUserButtonImage" getLabel="getUserButtonLabel" getVisible="getUserButtonVisible" onAction="userButtonAction" tag="6"/>
+        </group>
+      </tab>
+
+    </tabs>
+  </ribbon>
+</customUI>

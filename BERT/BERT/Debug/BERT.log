@@ -1,0 +1,138 @@
+﻿  stdafx.cpp
+  Updates.cpp
+p:\cpp\bert\bert\util.h(75): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bert\util.h(122): warning C4018: '>=': no coinciden signed/unsigned
+  ThreadLocalStorage.cpp
+p:\cpp\bert\bert\util.h(75): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bert\util.h(122): warning C4018: '>=': no coinciden signed/unsigned
+  RCOM.cpp
+p:\cpp\bert\bert\util.h(75): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bert\util.h(122): warning C4018: '>=': no coinciden signed/unsigned
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comutil.h(53): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comutil.h(54): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comutil.h(55): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comutil.h(196): warning C4003: no hay suficientes parámetros reales para la macro 'length'
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comutil.h(552): warning C4003: no hay suficientes parámetros reales para la macro 'length'
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comutil.h(652): warning C4003: no hay suficientes parámetros reales para la macro 'length'
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comutil.h(661): warning C4003: no hay suficientes parámetros reales para la macro 'length'
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comutil.h(722): warning C4003: no hay suficientes parámetros reales para la macro 'length'
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comutil.h(723): warning C4003: no hay suficientes parámetros reales para la macro 'length'
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comutil.h(2139): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comutil.h(2140): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comutil.h(2240): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comutil.h(2385): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comdef.h(40): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comdef.h(41): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comdef.h(42): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comip.h(24): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comip.h(25): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comip.h(684): warning C4068: pragma desconocida
+  d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comip.h(938): note: vea la referencia a la creación de instancias de plantilla clase de '_com_ptr_t<_IIID>' que se está compilando
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comip.h(1027): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\comdef.h(517): warning C4068: pragma desconocida
+p:\cpp\bert\bert\rcom.cpp(218): warning C4018: '<': no coinciden signed/unsigned
+  LinkLabel.cpp
+  json11.cpp
+  FileWatcher.cpp
+p:\cpp\bert\bert\filewatcher.cpp(32): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+p:\cpp\bert\bert\util.h(75): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bert\util.h(122): warning C4018: '>=': no coinciden signed/unsigned
+p:\cpp\bert\bert\filewatcher.cpp(356): warning C4244: 'inicializando': conversión de 'time_t' a 'DWORD'; posible pérdida de datos
+  XLCALL.CPP
+  ExcelFunctions.cpp
+p:\cpp\bert\bert\util.h(75): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bert\util.h(122): warning C4018: '>=': no coinciden signed/unsigned
+  Dialogs.cpp
+p:\cpp\bert\bert\util.h(75): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bert\util.h(122): warning C4018: '>=': no coinciden signed/unsigned
+  RemoteShell.cpp
+p:\cpp\bert\bert\util.h(75): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bert\util.h(122): warning C4018: '>=': no coinciden signed/unsigned
+p:\cpp\bert\bert\remoteshell.cpp(300): warning C4018: '<': no coinciden signed/unsigned
+  GraphicsDevice.cpp
+d:\sdk\r\r\include\r_ext\rs.h(55): warning C4005: 'ERROR': redefinición de macro
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\um\wingdi.h(118): note: vea la definición anterior de 'ERROR'
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\iostream(9): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\iostream(10): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\iostream(48): warning C4068: pragma desconocida
+  BERTJSON.cpp
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\xtree(14): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\xtree(15): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\xtree(1602): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\xtree(1603): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\xtree(1712): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\xtree(1751): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\xtree(1752): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\xtree(1787): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\xtree(2468): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\map(11): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\map(12): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\map(589): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\memory(12): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\memory(13): warning C4068: pragma desconocida
+d:\sdk\vs2017\vc\tools\msvc\14.12.25827\include\memory(3084): warning C4068: pragma desconocida
+  BERTGDI.cpp
+p:\cpp\bert\bert\bertgdi.cpp(137): warning C4101: 'hr': variable local sin referencia
+p:\cpp\bert\bert\bertgdi.cpp(364): warning C4244: 'argumento': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(366): warning C4244: 'argumento': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(384): warning C4244: 'argumento': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(431): warning C4244: 'argumento': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(446): warning C4244: 'argumento': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(449): warning C4244: 'argumento': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(464): warning C4244: 'argumento': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(469): warning C4244: 'inicializando': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(470): warning C4244: 'inicializando': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(472): warning C4244: 'inicializando': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(473): warning C4244: 'inicializando': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(475): warning C4244: '=': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(476): warning C4244: '=': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(489): warning C4244: 'argumento': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(498): warning C4244: '=': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(499): warning C4244: '=': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(519): warning C4244: 'argumento': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(557): warning C4244: 'argumento': conversión de 'double' a 'Gdiplus::REAL'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(603): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(615): warning C4244: 'argumento': conversión de 'double' a 'INT'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(627): warning C4244: 'argumento': conversión de 'double' a 'INT'; posible pérdida de datos
+p:\cpp\bert\bert\bertgdi.cpp(651): warning C4244: 'argumento': conversión de 'double' a 'INT'; posible pérdida de datos
+  BERTCOM.cpp
+p:\cpp\bert\bert\util.h(75): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bert\util.h(122): warning C4018: '>=': no coinciden signed/unsigned
+p:\cpp\bert\bert\bertcom.cpp(121): warning C4018: '>=': no coinciden signed/unsigned
+p:\cpp\bert\bert\bertcom.cpp(124): warning C4018: '>': no coinciden signed/unsigned
+p:\cpp\bert\bert\bertcom.cpp(128): warning C4018: '>': no coinciden signed/unsigned
+p:\cpp\bert\bert\bertcom.cpp(132): warning C4018: '>': no coinciden signed/unsigned
+p:\cpp\bert\bert\bertcom.cpp(287): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bert\bertcom.cpp(339): warning C4244: '=': conversión de 'DOUBLE' a 'int'; posible pérdida de datos
+  BERTAPI.cpp
+  BERT.cpp
+p:\cpp\bert\bert\util.h(75): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bert\util.h(122): warning C4018: '>=': no coinciden signed/unsigned
+p:\cpp\bert\bert\bert.cpp(80): warning C4018: '>=': no coinciden signed/unsigned
+p:\cpp\bert\bert\bert.cpp(440): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+p:\cpp\bert\bert\bert.cpp(483): warning C4101: 'i': variable local sin referencia
+p:\cpp\bert\bert\bert.cpp(674): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bert\bert.cpp(724): warning C4018: '<': no coinciden signed/unsigned
+  Generando código...
+  dllmain.cpp
+  RInterface.cpp
+p:\cpp\bert\bert\util.h(75): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bert\util.h(122): warning C4018: '>=': no coinciden signed/unsigned
+p:\cpp\bert\bert\rinterface.cpp(357): warning C4101: 'j': variable local sin referencia
+p:\cpp\bert\bert\rinterface.cpp(535): warning C4101: 'timeinfo': variable local sin referencia
+p:\cpp\bert\bert\rinterface.cpp(534): warning C4101: 't': variable local sin referencia
+p:\cpp\bert\bert\rinterface.cpp(699): warning C4018: '<=': no coinciden signed/unsigned
+p:\cpp\bert\bert\rinterface.cpp(925): warning C4101: 'err': variable local sin referencia
+p:\cpp\bert\bert\rinterface.cpp(1118): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bert\rinterface.cpp(1312): warning C4101: 'i': variable local sin referencia
+p:\cpp\bert\bert\rinterface.cpp(1412): warning C4101: 'err': variable local sin referencia
+p:\cpp\bert\bert\rinterface.cpp(2241): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bert\rinterface.cpp(2284): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bert\rinterface.cpp(2494): warning C4293: '>>': recuento de desplazamientos negativo o demasiado grande; comportamiento impredecible
+p:\cpp\bert\bert\rinterface.cpp(2457): warning C4101: 'err': variable local sin referencia
+p:\cpp\bert\bert\rinterface.cpp(2534): warning C4244: '=': conversión de 'double' a 'int'; posible pérdida de datos
+p:\cpp\bert\bert\rinterface.cpp(2662): warning C4244: '=': conversión de 'double' a 'int'; posible pérdida de datos
+D:\SDK\VS2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1198,5): warning MSB8012: TargetPath(P:\CPP\BERT\Debug\BERT.xll) no coincide con el valor de la propiedad OutputFile de Linker (P:\CPP\BERT\BERT\BERT32D.xll). Esto puede hacer que el proyecto no se compile correctamente. Para solucionar este problema, asegúrese de que los valores de propiedad $(OutDir), $(TargetName) y $(TargetExt) coinciden con el valor especificado en %(Link.OutputFile).
+D:\SDK\VS2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1200,5): warning MSB8012: TargetName(BERT) no coincide con el valor de la propiedad OutputFile de Linker (BERT32D). Esto puede hacer que el proyecto no se compile correctamente. Para solucionar este problema, asegúrese de que los valores de propiedad $(OutDir), $(TargetName) y $(TargetExt) coinciden con el valor especificado en %(Link.OutputFile).
+     Creando biblioteca P:\CPP\BERT\Debug\BERT.lib y objeto P:\CPP\BERT\Debug\BERT.exp
+  BERT.vcxproj -> P:\CPP\BERT\Debug\BERT.xll

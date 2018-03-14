@@ -1,0 +1,47 @@
+﻿D:\SDK\VS2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(373,5): warning MSB8004: El directorio Output no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Output.
+  Processing .\BERTRibbon2.idl
+  BERTRibbon2.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oaidl.idl
+  oaidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\objidl.idl
+  objidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\unknwn.idl
+  unknwn.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared\wtypes.idl
+  wtypes.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared\wtypesbase.idl
+  wtypesbase.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared\basetsd.h
+  basetsd.h
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared\guiddef.h
+  guiddef.h
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\ocidl.idl
+  ocidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oleidl.idl
+  oleidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\servprov.idl
+  servprov.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\urlmon.idl
+  urlmon.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\msxml.idl
+  msxml.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oaidl.acf
+  oaidl.acf
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\ocidl.acf
+  ocidl.acf
+  stdafx.cpp
+  Connect.cpp
+p:\cpp\bert\bertribbon2\connect.h(278): warning C4018: '>': no coinciden signed/unsigned
+p:\cpp\bert\bertribbon2\connect.h(287): warning C4018: '>': no coinciden signed/unsigned
+p:\cpp\bert\bertribbon2\connect.h(300): warning C4018: '>': no coinciden signed/unsigned
+p:\cpp\bert\bertribbon2\connect.h(334): warning C4018: '>': no coinciden signed/unsigned
+p:\cpp\bert\bertribbon2\connect.h(372): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bertribbon2\connect.cpp(69): warning C4101: 'dwBuffer': variable local sin referencia
+  BERTRibbon2.cpp
+  Generando código...
+  dllmain.cpp
+D:\SDK\VS2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1198,5): warning MSB8012: TargetPath(P:\CPP\BERT\BERTRibbon2\..\BERT\BERTRibbon2.dll) no coincide con el valor de la propiedad OutputFile de Linker (P:\CPP\BERT\BERTRibbon2\BERTRibbon2x86D.dll). Esto puede hacer que el proyecto no se compile correctamente. Para solucionar este problema, asegúrese de que los valores de propiedad $(OutDir), $(TargetName) y $(TargetExt) coinciden con el valor especificado en %(Link.OutputFile).
+D:\SDK\VS2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1200,5): warning MSB8012: TargetName(BERTRibbon2) no coincide con el valor de la propiedad OutputFile de Linker (BERTRibbon2x86D). Esto puede hacer que el proyecto no se compile correctamente. Para solucionar este problema, asegúrese de que los valores de propiedad $(OutDir), $(TargetName) y $(TargetExt) coinciden con el valor especificado en %(Link.OutputFile).
+     Creando biblioteca BERTRibbon2x86D.lib y objeto BERTRibbon2x86D.exp
+  BERTRibbon2.vcxproj -> P:\CPP\BERT\BERTRibbon2\..\BERT\BERTRibbon2.dll
+          1 archivo(s) copiado(s).

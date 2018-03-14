@@ -1,0 +1,14 @@
+﻿  stdafx.cpp
+  ExcelFunctions.cpp
+p:\cpp\bert\bertmgr\excelfunctions.cpp(80): warning C4018: '<': no coinciden signed/unsigned
+p:\cpp\bert\bertmgr\excelfunctions.cpp(85): warning C4018: '<': no coinciden signed/unsigned
+  BERTMGR.cpp
+  XLCALL.CPP
+  Generando código...
+  dllmain.cpp
+D:\SDK\VS2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1198,5): warning MSB8012: TargetPath(P:\CPP\BERT\Debug\BERTMGR.dll) no coincide con el valor de la propiedad OutputFile de Linker (P:\CPP\BERT\BERT\BERTMGR32D.xll). Esto puede hacer que el proyecto no se compile correctamente. Para solucionar este problema, asegúrese de que los valores de propiedad $(OutDir), $(TargetName) y $(TargetExt) coinciden con el valor especificado en %(Link.OutputFile).
+D:\SDK\VS2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1199,5): warning MSB8012: TargetExt(.dll) no coincide con el valor de la propiedad OutputFile de Linker (.xll). Esto puede hacer que el proyecto no se compile correctamente. Para solucionar este problema, asegúrese de que los valores de propiedad $(OutDir), $(TargetName) y $(TargetExt) coinciden con el valor especificado en %(Link.OutputFile).
+D:\SDK\VS2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1200,5): warning MSB8012: TargetName(BERTMGR) no coincide con el valor de la propiedad OutputFile de Linker (BERTMGR32D). Esto puede hacer que el proyecto no se compile correctamente. Para solucionar este problema, asegúrese de que los valores de propiedad $(OutDir), $(TargetName) y $(TargetExt) coinciden con el valor especificado en %(Link.OutputFile).
+BERTMGR.def(10): warning LNK4275: la instrucción "LIBRARY" no puede aparecer después de 'LIBRARY' or 'NAME'; se ha ignorado
+     Creando biblioteca P:\CPP\BERT\Debug\BERTMGR.lib y objeto P:\CPP\BERT\Debug\BERTMGR.exp
+  BERTMGR.vcxproj -> P:\CPP\BERT\Debug\BERTMGR.dll
