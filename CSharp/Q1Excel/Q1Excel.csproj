@@ -90,7 +90,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\bin\</OutputPath>
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
     <DefineConstants>$(DefineConstants);TRACE</DefineConstants>
     <WarningLevel>4</WarningLevel>
@@ -198,6 +198,7 @@
     <EmbeddedResource Include="Q1Ribbon.resx">
       <DependentUpon>Q1Ribbon.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -213,6 +214,8 @@
     <Compile Include="Q1Ribbon.Designer.cs">
       <DependentUpon>Q1Ribbon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Q1Threading.cs" />
+    <Compile Include="Q1XLS.cs" />
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -230,6 +233,12 @@
       <Project>{7d0d7056-220a-441e-a95f-d9d74217e6b0}</Project>
       <Name>Q1Base</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnStockOK.Image.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock.png" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

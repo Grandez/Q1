@@ -1,3 +1,22 @@
+#' makeDF
+#' @description
+#' Crea un dataframe a partir del rango pasado y el numero de registros
+#' Asume que el eje X sera una secuencia empezando en 1
+#' 
+makeDF2 <- function(yAxis, nRows = -1) {
+    if (nRows > -1) {
+        cy = yAxis[1:nRows]
+        cx = seq(1:nRows)
+    }
+    else {
+        cy = yAxis
+        cx = seq(1:length(yAxis))
+    }
+    cy = rev(cy)
+    df = data.frame(x = cx, y = cy)
+}
+
+
 #' calcLM
 #' 
 #' @description

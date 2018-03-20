@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using System.IO;
 
-using Q1Loader.INet;
 using Q1Base.Pers;
 using Q1Base.Pers.Tables;
 using Q1Base;
 using Q1Base.JSon;
+using Q1RDotnet;
 
 namespace Q1Loader {
    class Q1Loader {
-      private Web web = new Web();
+      private IProvider web = null;
       private DB db = null;
-      private R r = null;
+      //private R r = null;
 
       static void Main(string[] args) {
          Q1Loader loader = new Q1Loader();
@@ -20,48 +20,41 @@ namespace Q1Loader {
 
       }
       private void start(String[] args) {
+         DateTime start = DateTime.Now;
          try {
-            LogMgr.info("Proceso iniciado");
             processArguments(args);
-            //Config.setDatabase("D:\\Prj\\Cartera\\portfolio.accdb");
-            DateTime start = DateTime.Now;
+            LogMgr.log("Proceso iniciado");
 
             db = DB.getInstance();
-            r = R.getInstance();
+            web = Provider.getProvider();
+            //r = R.getInstance();
 
-            Config2.euro = web.getEuro();
-            //R r = new R();
+            CFG.setEuro(web.getEuro());
+            SrvCierres srv = new SrvCierres();
+            List<Cierres> monedas = srv.getUltimoCierre();
+
+            Q1R r = Q1R.getInstance();
             //r.testR();
-            if ((Config2.mode & 0x01) != 0) processCotizacion();
-            if ((Config2.mode & 0x02) != 0) processCierre();
-            //processCierre();
-
-            db.close();
-
-            // Do some work
-            TimeSpan timeDiff = DateTime.Now - start;
-
-            //         Console.WriteLine(timeDiff.TotalMilliseconds);
-            //         Console.ReadLine();
-         }catch(Exception e) {
-            using (StreamWriter sw = File.AppendText(@"D:\tmp\AAA.txt")) {
-               sw.WriteLine(e.Message);
-            }
+            //if ((CFG.mode & 0x01) != 0) processCotizacion(monedas);
+            //if ((CFG.mode & 0x02) != 0) processCierre(monedas);
+            processCierre(monedas);
+         }
+         catch(Exception e) {
             LogMgr.err(e.Message);
          } finally  {
-            using (StreamWriter sw = File.AppendText(@"D:\tmp\AAA.txt")) {
-               sw.WriteLine("Acaba");
-            }
-}
-
+            db.close();
+         }
+         TimeSpan timeDiff = DateTime.Now - start;
+         LogMgr.log("Proceso finalizado: " + timeDiff.ToString());
       }
 
-      private void processCotizacion() {
-         Ticker[] tickers = web.getCotizacion();
-         List<Ticker> data = new List<Ticker>(tickers);
+      private void processCotizacion(List<Cierres> monedas) {
+         LogMgr.log("Recuperando cotizaciones");
+         List<Ticker> tickers = web.getTickers(monedas);
+
          // Actualiza monedas
          SrvMonedas srv1 = new SrvMonedas();
-         foreach (Ticker t in data) {
+         foreach (Ticker t in tickers) {
             Monedas m = new Monedas();
             m.Moneda = t.symbol;
             m.Nombre = t.id;
@@ -70,95 +63,58 @@ namespace Q1Loader {
          }
          SrvTickers srv = new SrvTickers();
          srv.insert(new List<Ticker>(tickers));        
-         r.calculate(srv, TABLES.TICKERS);
+         //r.calculate(srv, TABLES.TICKERS);
       }
 
-      private void processCierre() {
-          List<Cierre> total = new List<Cierre>();
-          SrvCierres srv = new SrvCierres();
-          foreach(Cierres c in srv.getUltimoCierre()) {
-              String start = calculateFecha(c.Fecha);
-              List<Cierre> cc = web.getCierre(c.Moneda, c.Nombre, start);
-              total.AddRange(cc);
-          }
-          srv.insert(total);
-          r.calculate(srv, TABLES.CIERRRES);
+      private void processCierre(List<Cierres> monedas) {
+         LogMgr.log("Recuperando cierres");
+         try {
+            List<Cierre> cierres = web.getCierres(monedas);
+            SrvCierres srv = new SrvCierres();
+            srv.insert(cierres);
+            //r.calculate(srv, TABLES.CIERRRES);
+         }
+         catch (Exception e) {
+            LogMgr.err(e.Message);
+         }
       }
+
 
       private void processArguments(String[] args) {
-         Config2.mode = 0x01;
+         CFG.mode = 0x01;
          for (int idx = 0; idx < args.Length; idx++) {
             if (!args[idx].StartsWith("/")) {
                LogMgr.err("ERROR: Parametro erroneo: " + args[idx]);
                System.Environment.Exit(1);
             }
             String parm = args[idx].Substring(1);
-            if (parm.Length > 1) { 
+            if (parm.Length > 1) {
                LogMgr.err("ERROR: Parametro erroneo: " + args[idx]);
                System.Environment.Exit(1);
-             }
-            if (parm.ToUpper().CompareTo("C") == 0) Config2.mode = 0x02; 
+            }
+            if (parm.ToUpper().CompareTo("C") == 0) CFG.mode = 0x02;
+            if (parm.ToUpper().CompareTo("T") == 0) CFG.mode = 0x01;
+            if (parm.ToUpper().CompareTo("A") == 0) CFG.mode = 0x03;
+            if (parm.ToUpper().CompareTo("L") == 0) CFG.log = 0x02;
+            if (parm.ToUpper().CompareTo("D") == 0) CFG.log = 0x06;
+            if (parm.ToUpper().CompareTo("S") == 0) CFG.log = 0x00;
+            if (parm.ToUpper().CompareTo("H") == 0) {
+               Console.WriteLine("Cargador de datos");
+               Console.WriteLine("/C - Carga cierres");
+               Console.WriteLine("/T - Carga tickers");
+               Console.WriteLine("/A - Carga todo");
+               Console.WriteLine("/L - Muestra log en consola");
+               Console.WriteLine("/D - Muestra debug");
+               Console.WriteLine("/S - No graba info de proceso");
+               Environment.Exit(0);
+            }
          }
          DateTime local = DateTime.Now;
-         if (local.Hour == 0) Config2.mode |= 0x02;
+         if (local.Hour == 0) CFG.mode |= 0x02;
 
       }
 
-      private String calculateFecha(long epoch) {
-         if (epoch == 0) return "20000101";
-         DateTime dt = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
-         dt.AddSeconds(epoch);
-         dt.AddDays(1);
-         return String.Format("{0:D4}{1:D2}{2:D2}", dt.Year, dt.Month, dt.Day);
-         }
-
-
-
-      /*
-      int tipo = 0;
-      int mode = 
-      for (int idx = 0; idx < args.Length; idx++) {
-         switch(tipo) {
-            case 0: if (args[idx].CompareTo("/F",StringComparison.OrdinalIgnoreCase) == 0) 
-         }
-      }
-     For Each arg In args
-         Select Case tipo
-             Case 0
-                 Select Case arg
-                     Case "/F"
-                         tipo = 10
-                     Case "/A"
-                         tipo = 20
-                     Case "/T"
-                         Config.mode = 0
-                         tipo = 0
-                     Case "/D"
-                         Config.mode = 1
-                         tipo = 0
-                 End Select
-             Case 10
-                 Config.folder = arg
-                 tipo = 0
-             Case 20
-                 Config.file = arg
-                 tipo = 0
-             Case Else
-                 tipo = -1
-         End Select
-     Next
-     Select Case tipo
-         Case 0
-         Case 10
-             writeFile("Falta el nombre del archivo Excel")
-         Case Else
-             writeFile("Parametros erroneos")
-     End Select
-     If tipo<> 0 Then
-         Environment.Exit(1)
-     End If
- End Sub
-*/
+ 
    }
 
 }

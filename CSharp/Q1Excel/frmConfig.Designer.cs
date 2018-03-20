@@ -32,8 +32,8 @@
          this.txtLibro = new System.Windows.Forms.TextBox();
          this.lblHoja = new System.Windows.Forms.Label();
          this.txtHoja = new System.Windows.Forms.TextBox();
-         this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-         this.button1 = new System.Windows.Forms.Button();
+         this.dlgOpen = new System.Windows.Forms.OpenFileDialog();
+         this.btnOpenDB = new System.Windows.Forms.Button();
          this.SuspendLayout();
          // 
          // btnOK
@@ -104,26 +104,23 @@
          this.txtHoja.Size = new System.Drawing.Size(240, 20);
          this.txtHoja.TabIndex = 3;
          // 
-         // openFileDialog1
+         // btnOpenDB
          // 
-         this.openFileDialog1.FileName = "openFileDialog1";
-         // 
-         // button1
-         // 
-         this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-         this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-         this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-         this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-         this.button1.Location = new System.Drawing.Point(359, 22);
-         this.button1.Name = "button1";
-         this.button1.Size = new System.Drawing.Size(29, 20);
-         this.button1.TabIndex = 1;
-         this.button1.UseVisualStyleBackColor = true;
+         this.btnOpenDB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOpenDB.BackgroundImage")));
+         this.btnOpenDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+         this.btnOpenDB.Image = ((System.Drawing.Image)(resources.GetObject("btnOpenDB.Image")));
+         this.btnOpenDB.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+         this.btnOpenDB.Location = new System.Drawing.Point(359, 22);
+         this.btnOpenDB.Name = "btnOpenDB";
+         this.btnOpenDB.Size = new System.Drawing.Size(29, 20);
+         this.btnOpenDB.TabIndex = 1;
+         this.btnOpenDB.UseVisualStyleBackColor = true;
+         this.btnOpenDB.Click += new System.EventHandler(this.btnOpenDB_Click);
          // 
          // frmConfig
          // 
          this.ClientSize = new System.Drawing.Size(579, 347);
-         this.Controls.Add(this.button1);
+         this.Controls.Add(this.btnOpenDB);
          this.Controls.Add(this.txtHoja);
          this.Controls.Add(this.lblHoja);
          this.Controls.Add(this.txtLibro);
@@ -145,14 +142,12 @@
       private System.Windows.Forms.Label lblDB;
       private System.Windows.Forms.TextBox txtDB;
       private System.Windows.Forms.OpenFileDialog dlgOpen;
-      private System.Windows.Forms.Button btnOpenDialog;
       private System.Windows.Forms.Button btnOK;
       private System.Windows.Forms.Button btnCancel;
       private System.Windows.Forms.Label lblExcel;
       private System.Windows.Forms.TextBox txtLibro;
       private System.Windows.Forms.Label lblHoja;
       private System.Windows.Forms.TextBox txtHoja;
-      private System.Windows.Forms.OpenFileDialog openFileDialog1;
-      private System.Windows.Forms.Button button1;
+      private System.Windows.Forms.Button btnOpenDB;
    }
 }

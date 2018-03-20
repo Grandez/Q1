@@ -18,7 +18,7 @@ namespace Q1Base.Pers {
       }
 
       public DB() {
-         String db = Config.getDataBase();
+         String db = CFG.getDataBase();
          cn = new OleDbConnection(connStr);
          cn.Open();
       }

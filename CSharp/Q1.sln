@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q1Base", "Q1Base\Q1Base.csp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BERT", "..\BERT\BERT\BERT.vcxproj", "{82277CDB-4EEB-4E64-A248-0F6D6C6AA2F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q1RDotNet", "Q1RDotNet\Q1RDotNet.csproj", "{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,24 @@ Global
 		{82277CDB-4EEB-4E64-A248-0F6D6C6AA2F4}.Release13|x64.Build.0 = Release13|x64
 		{82277CDB-4EEB-4E64-A248-0F6D6C6AA2F4}.Release13|x86.ActiveCfg = Release13|Win32
 		{82277CDB-4EEB-4E64-A248-0F6D6C6AA2F4}.Release13|x86.Build.0 = Release13|Win32
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Debug|x64.Build.0 = Debug|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Debug|x86.Build.0 = Debug|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Release|x64.ActiveCfg = Release|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Release|x64.Build.0 = Release|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Release|x86.ActiveCfg = Release|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Release|x86.Build.0 = Release|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Release13|Any CPU.ActiveCfg = Release|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Release13|Any CPU.Build.0 = Release|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Release13|x64.ActiveCfg = Release|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Release13|x64.Build.0 = Release|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Release13|x86.ActiveCfg = Release|Any CPU
+		{51E25A2D-FBB5-4408-BC23-8F9EBD4F99A6}.Release13|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

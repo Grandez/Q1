@@ -25,8 +25,22 @@ namespace Q1Excel {
       }
 
       private void frmConfig_Load(object sender, EventArgs e) {
-         txtDB.Text = Config.getDataBase();
+         txtDB.Text = CFG.getDataBase();
 
+      }
+
+      private void btnOpenDB_Click(object sender, EventArgs e) {
+         dlgOpen = new OpenFileDialog();
+         dlgOpen.Filter = "Databases|*.accdb";
+         dlgOpen.Title = "Seleccionar la base de datos";
+
+         // Show the Dialog.  
+         // If the user clicked OK in the dialog and  
+         // a .CUR file was selected, open it.  
+         if (dlgOpen.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
+            // Assign the cursor in the Stream to the Form's Cursor property.  
+            //this.Cursor = new Cursor(openFileDialog1.OpenFile());
+         }
       }
    }
 }

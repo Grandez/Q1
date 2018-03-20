@@ -24,12 +24,15 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\bin\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,12 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config.cs" />
+    <Compile Include="Base\CFG.cs" />
+    <Compile Include="Base\BASE.cs" />
+    <Compile Include="INet\CoinMarketCap.cs" />
+    <Compile Include="INet\IProvider.cs" />
+    <Compile Include="INet\Provider.cs" />
+    <Compile Include="INet\Web.cs" />
     <Compile Include="JSon\Cierre.cs" />
     <Compile Include="JSon\Keys.cs" />
     <Compile Include="JSon\Ticker.cs" />
     <Compile Include="JSon\Trend.cs" />
-    <Compile Include="LogMgr.cs" />
+    <Compile Include="Base\LogMgr.cs" />
     <Compile Include="Pers\DB.cs" />
     <Compile Include="Pers\IService.cs" />
     <Compile Include="Pers\Row.cs" />
@@ -61,6 +69,9 @@
     <Compile Include="Pers\Tables\TickersPrc.cs" />
     <Compile Include="Pers\Tables\TickersTrend.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

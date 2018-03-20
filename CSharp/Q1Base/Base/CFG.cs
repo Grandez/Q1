@@ -6,19 +6,43 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Q1Base {
-    public static class Config {
-        public static String getDataBase() {
+    public static class CFG {
+      private static decimal euro = 1.0m;
+      public static Boolean Loading = false;
+      public static int Interval = 300000;
+      public static int mode = 0x01;
+      public static int log = 0x01;
+
+      public static String getDataBase() {
          return getKeyString("Database");
         }
         public static void setDatabase(String valor) {
          setKeyString("Database", valor);
         }
+        public static String getProvider() {
+          return getKeyString("Provider");
+        }
+        public static void setProvider(String valor) {
+           setKeyString("Provider", valor);
+        }
+        public static String getMasterSheet() {
+           return getKeyString("Hoja");
+        }
+        public static void setMasterSheet(String valor) {
+           setKeyString("Hoja", valor);
+        }
 
-        private static String getKeyString(String clave) {
-           String res = null;
+      public static decimal getEuro() {
+           return euro;
+        }
+        public static void setEuro(decimal valor) {
+           euro = valor;
+        }
+
+      private static String getKeyString(String clave) {
+         String res = null;
          RegistryKey key = getRoot();
 
-         //if it does exist, retrieve the stored values  
          if (key != null) {
               res = (String) key.GetValue(clave, "");
               key.Close();
