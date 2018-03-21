@@ -7,7 +7,9 @@ load.ggplot2 = suppressPackageStartupMessages(require(ggplot2))
 #' @param yAxis Matriz de nRow x 1
 #' 
 makeDFXY <- function(yAxis, nRows = 0, headers = 0) {
-  data <- if (nRows > 0) 
+  if (nRows <= headers) return data.frame()
+  
+  data <- if (nRows > headers) 
                yAxis[seq(headers + 1, nRows),]
            else
               if (headers > 0)
@@ -34,7 +36,10 @@ makeDFXY <- function(yAxis, nRows = 0, headers = 0) {
 
 
 plotBase <- function(df) {
-   g = ggplot(df) + theme_bw() 
+   g = ggplot(df) + 
+       theme_bw() + 
+       theme(legend.position = "none") +
+       labs(x="Tiempo", y="Cotizacion")
    g
 }
 
